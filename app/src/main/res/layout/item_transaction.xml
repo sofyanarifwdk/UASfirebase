@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="16dp"
+            android:orientation="vertical">
+
+            <!-- Tanggal -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labelTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal :"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTanggal"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Tanggal"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Pemasukan -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labelPemasukan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pemasukan :"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPemasukan"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Pemasukan"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Pengeluaran -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labelPengeluaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengeluaran :"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPengeluaran"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Pengeluaran"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Keterangan -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labelKeterangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keterangan :"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvKeterangan"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Keterangan"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Saldo Akhir -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labelSaldoAkhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saldo Akhir :"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvSaldoAkhir"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Saldo Akhir"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Button Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:paddingTop="8dp">
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/btnEdit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@android:drawable/ic_menu_edit"-->
+<!--                    android:contentDescription="Edit"-->
+<!--                    android:background="?android:attr/selectableItemBackground"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:tint="@android:color/darker_gray" />-->
+
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:contentDescription="Delete"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:tint="@android:color/holo_red_light" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grape1"
+                android:paddingHorizontal="16dp"
+                android:text="Selamat Datang "
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Di Aplikasi Kas RT 021"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/grape1"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold" />
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="@android:color/darker_gray"/>-->
+        </LinearLayout>
+
+        <!-- Card View Scroll Horizontal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:text="Warga Kite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <HorizontalScrollView
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:background="@color/colorPrimaryVariant"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+
+                    <ImageView
+                        android:id="@+id/slide1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rt"
+                        android:contentDescription="@string/app_name" />
+
+
+                    <!-- Isi Card View -->
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:background="@color/colorPrimaryVariant"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+
+                    <ImageView
+                        android:id="@+id/slide2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/gamer"
+                        android:contentDescription="@string/app_name" />
+
+
+                    <!-- Isi Card View -->
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:background="@color/colorPrimaryVariant"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+
+                    <ImageView
+                        android:id="@+id/slide3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hacker"
+                        android:contentDescription="@string/app_name" />
+
+
+                    <!-- Isi Card View -->
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:background="@color/colorPrimaryVariant"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="2dp">
+
+
+                    <ImageView
+                        android:id="@+id/slide4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/boy"
+                        android:contentDescription="@string/app_name" />
+
+
+                    <!-- Isi Card View -->
+
+                </androidx.cardview.widget.CardView>
+                <!-- Tambahkan lebih banyak CardView di sini -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Banner Carousel -->
+        <!--<androidx.viewpager.widget.ViewPager
+            android:id="@+id/banner_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <!- Menu -->
+        <Button
+            android:id="@+id/startDetectionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_centerInParent="true"
+            android:text="Start Face Detection" />
+
+    </LinearLayout>
+
+</FrameLayout>
